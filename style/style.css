@@ -20,7 +20,7 @@ body {
     border-radius: 20px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
     max-width: 90vw;
-    min-height: 70vh;
+    min-height: auto;
 }
 
 .card__header {
@@ -81,7 +81,7 @@ p {
     font-size: 16px;
     color: var(--text-color);
     line-height: 1.5;
-    width: 30vw;
+    width: 70vw;
 }
 
 .links {
@@ -188,6 +188,10 @@ p {
     .card {
         height:fit-content;
         width:50vw;
+    }
+    p{
+        text-align: center;
+        width: auto;
     }
 
 }

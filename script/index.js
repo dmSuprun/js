@@ -26,7 +26,7 @@ friends[3] = {
 
 friends[4] = {
     name: "Дмитро Шевченко",
-    birthday: "10.11.2005",
+    birthday: "11.11.2005",
     mobile: "050 911 22 45"
 };
 
@@ -38,7 +38,7 @@ friends[5] = {
 
 friends[6] = {
     name: "Сергій Полянський",
-    birthday: "14.09.2005",
+    birthday: "14.11.2005",
     mobile: "063 777 44 88"
 };
 
@@ -50,7 +50,7 @@ friends[7] = {
 
 friends[8] = {
     name: "Аліна Кравець",
-    birthday: "13.11.2004",
+    birthday: "14.11.2004",
     mobile: "097 555 09 09"
 };
 
@@ -65,7 +65,6 @@ function daysDiff(date1, date2) {
     let data_2_day = date2.getDate()
     let data_1_month = date1.getMonth()
     let data_2_month = date2.getMonth()
-    console.log(data_2_month === data_1_month)
     if (data_1_month === data_2_month) {
         return Math.abs(data_1_day - data_2_day);
     } else {
