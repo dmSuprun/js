@@ -181,6 +181,29 @@ p {
 }
 
 
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.a__nav__item{
+    color: var(--text-color);
+
+
+}
+.a__nav__item:hover{
+    color: var(--button-bg-color);
+    transition:  0.2s;
+
+
+}
+
+
+
 @media (max-width: 990px) {
     .card {
         height:fit-content;
@@ -192,3 +215,5 @@ p {
     }
 
 }
+
+
