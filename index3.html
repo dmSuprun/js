@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна №8</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="stylesheet" href="style/index2_style.css">
+</head>
+<body>
+<main class="card">
+    <header class="card__header">
+        <h1>Лабораторна робота №3. JavaScript.</h1>
+        <h2>Виконав студент АнД-31 Супрун Дмитро</h2>
+        <h2>Завдання до лабораторної роботи</h2>
+        <nav class="navbar">
+            <div class="nav__item">
+                <a href="index.html" class="a__nav__item" o>ЛАБОРАТОРНА №1</a>
+            </div>
+            <div class="nav__item">
+                <a href="index2.html" class="a__nav__item">ЛАБОРАТОРНА №2</a>
+            </div>
+            <div class="nav__item">
+                <a href="index3.html" class="a__nav__item">ЛАБОРАТОРНА №3</a>
+            </div>
+        </nav>
+
+    </header>
+    <section class="section__tasks">
+        <h2>Завдання</h2>
+        <div class="list_with_tasks">
+            <div class="task_item">
+                <p>Базовий клас: Квадрат (поле - назва, сторона)</p>
+            </div>
+            <div class="task_item">
+                <p>Метод: Площа квадрата.</p>
+            </div>
+            <div class="task_item">
+                <p>Нащадок: Прямокутник (поле - різниця між довжинами сторін)</p>
+            </div>
+            <div class="task_item">
+                <p>Зміни в нащадках: Змінити обчислення площі фігури.</p>
+            </div>
+
+        </div>
+
+
+    </section>
+    <section class="section__results">
+        <h2>Результати роботи</h2>
+
+        <div class="result">
+            <div class="cvadrat">
+                <h2>Квадрат</h2>
+
+                <label>Назва:
+                    <input type="text" name="" id="name">
+                </label>
+                <label>Сторона
+                    <input type="number" name="" id="c1">
+                </label>
+                <div id="result_cvadrat">
+
+                </div>
+
+            </div>
+            <div class="pramokytnyk">
+                <h2>Прямокутник</h2>
+
+                <label>Назва:
+                    <input type="text" name="" id="name2">
+                </label>
+                <label>Сторона
+                    <input type="number" name="" id="c2">
+                </label>
+                <label>Різниця у сторін
+                    <input type="number" name="" id="d">
+                </label>
+                <div id="result_pramokytnyk">
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="links">
+            <div class="link" onclick="main()">
+                Перевірити
+            </div>
+            <div class="link" id="close_btn" onclick="">
+                Закрити
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+<script src="script/index3.js"></script>
+
+</body>
+</html>

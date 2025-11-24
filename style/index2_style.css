@@ -2,3 +2,24 @@
     border: 1px solid var(--text-color);
     margin-top: 10px;
 }
+
+
+.cvadrat,.pramokytnyk{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 10px;
+    border: 1px solid var(--text-color);
+}
+
+
+.cvadrat input{
+    border: 1px solid var(--text-color);
+    margin-top: 10px;
+}
+.pramokytnyk input{
+    border: 1px solid var(--text-color);
+    margin-top: 10px;
+
+}
