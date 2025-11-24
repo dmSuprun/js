@@ -5,6 +5,8 @@
     <title>Лабораторна №7</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/style.css">
+
+    <link rel="stylesheet" href="style/index2_style.css">
 </head>
 <body>
 <main class="card">
@@ -29,16 +31,14 @@
         <h2>Завдання</h2>
         <div class="list_with_tasks">
             <div class="task_item">
-                <p>У формі є список жанрів та поля для введення назви книги та автора,
-                    після натискання Enter при введені автора сформуйте списки книг по кожному
-                    з жанрів.</p>
+                <p>На Вашій сторінці є поле вводу, у яке через кому вводяться назви
+                    країн. При натисканні на кнопку зробіть так, щоб ці країни записалися в список
+                    ul під поле (кожна країна – окремий li).</p>
             </div>
             <div class="task_item">
-                <p>Дана таблиця з числами. При натисканні на комірку, якщо значення
-                    в ній від’ємне, то в ній з'являється поле введення з вмістом цієї комірки і
-                    кнопка зберегти. Можна редагувати числа в полі та зберегти - і число в
-                    комірці зміниться на те, що був в полі введення, але лише в тому випадку якщо
-                    воно додатнє.</p>
+                <p>Дана пуста таблиця. При натисканні на кнопку заповнити її
+                    наступним чином – парні рядки від’ємні числа, непарні – додатні, головна
+                    діагональ – 0.</p>
             </div>
 
         </div>
@@ -50,43 +50,39 @@
         <h2>Результати роботи</h2>
         <div class="form">
             <form action="">
-                <select name="" id="">
-                    <option>Фантастика</option>
-                    <option>Наукова</option>
 
-                    <option>Бізнес</option>
-                    <option>Про криптовалюту</option>
-
-
-                </select>
-                <label>Назва:
-                    <input type="text" name="" id="">
-                </label>
-                <label>Автор:
-                    <input type="text" name="" id="">
+                <label>Міста:
+                    <input type="text" name="" id="city">
                 </label>
             </form>
         </div>
+
         <div class="result">
             <div id="result">
 
             </div>
+
+
+        </div>
+        <table id="myTable" class="friends-table" border="1">
+            <tbody></tbody>
+        </table>
+        <div class="links">
+            <div class="link" onclick="main()">
+                Перевірити
+            </div>
+            <div class="link" id="close_btn" onclick="closeTable()">
+                Закрити
+            </div>
+
+
+
         </div>
 
     </section>
 
 
-    <div class="links">
-        <div class="link" onclick="main()">
-            Перевірити
-        </div>
-        <div class="link" id="close_btn" onclick="closeTable()">
-            Закрити
-        </div>
 
-
-
-    </div>
 </main>
 
 <script src="script/index2.js"></script>
