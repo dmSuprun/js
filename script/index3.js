@@ -41,9 +41,15 @@ function main(){
     var s_r = rq.retSquare();
 
 
-    document.getElementById("result_cvadrat").innerHTML = s;
-    document.getElementById("result_pramokytnyk").innerHTML = s_r;
+    document.getElementById("result_cvadrat").innerHTML = '<br><h2>Площа квадрату:'+s+'</h2>';
+    document.getElementById("result_pramokytnyk").innerHTML = '<br><h2>Площа прямокутника:'+s_r+'</h2>';
 
 
+
+}
+
+function close_tab(){
+    document.getElementById("result_cvadrat").innerHTML = '';
+    document.getElementById("result_pramokytnyk").innerHTML ='';
 
 }
