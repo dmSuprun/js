@@ -39,9 +39,9 @@ function fillTable() {
         const tr = document.createElement("tr");
 
         if ((i + 1) % 2 === 0) {
-            tr.classList.add("three_day_bd"); // парний рядок
+            tr.classList.add("one_row");
         } else {
-            tr.classList.add("today_bd");     // непарний рядок
+            tr.classList.add("three_row");
         }
 
         for (let j = 0; j < cols; j++) {

@@ -22,3 +22,11 @@
     margin-top: 10px;
 
 }
+
+.one_row{
+    background-color: var(--button-bg-color);
+
+}
+.three_row{
+    background-color: var(--body-background);
+}
