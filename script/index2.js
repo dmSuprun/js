@@ -1,6 +1,4 @@
 
-
-
 function main() {
     const value = document.getElementById("city").value;
     var components = value.split(",");
@@ -11,10 +9,6 @@ function main() {
     html += "</ul>";
     document.getElementById("result").innerHTML = html;
     fillTable()
-
-
-
-
 }
 
 function closeTable() {
@@ -25,7 +19,6 @@ function closeTable() {
     tbody.innerHTML = ""; // очистити
 
 
-
 }
 
 function fillTable() {
@@ -33,7 +26,7 @@ function fillTable() {
     const cols = 5;
     const tbody = document.querySelector("#myTable tbody");
 
-    tbody.innerHTML = ""; // очистити
+    tbody.innerHTML = "";
 
     for (let i = 0; i < rows; i++) {
         const tr = document.createElement("tr");
@@ -43,6 +36,7 @@ function fillTable() {
         } else {
             tr.classList.add("three_row");
         }
+
 
         for (let j = 0; j < cols; j++) {
             const td = document.createElement("td");
@@ -55,9 +49,30 @@ function fillTable() {
                 td.textContent = -(i + j + 1);
             }
 
+
             tr.appendChild(td);
         }
 
         tbody.appendChild(tr);
     }
+
+
+    let sums = [0, 0, 0, 0, 0];
+
+    for (let k = 0; k < cols; k++) {
+        for (let l = 0; l < rows; l++) {
+            const cellValue = parseFloat(tbody.rows[l].cells[k].textContent);
+            sums[k] += cellValue;
+        }
+    }
+
+    const tr = document.createElement("tr");
+
+    for (let k = 0; k < cols; k++) {
+        const td = document.createElement("td");
+        td.textContent = sums[k];
+        tr.appendChild(td);
+    }
+
+    tbody.appendChild(tr);
 }
